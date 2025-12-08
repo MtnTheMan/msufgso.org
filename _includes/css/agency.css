@@ -234,6 +234,54 @@ fieldset[disabled] .btn-xl.active {
     background-color: #{{ site.data.template.color.secondary }};
 }
 
+header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+/* Make hero text stand out with a white outline */
+.hero-outline {
+  /* ensure text is visible on dark hero backgrounds */
+  color: #18453b; /* MSU-ish deep green, tweak as desired */
+
+  /* white stroke for browsers that support it */
+  -webkit-text-stroke: 1px #ffffff;
+  text-stroke: 1px #ffffff; /* not widely supported, but harmless */
+
+  /* fallback: subtle multi-directional white glow */
+  text-shadow:
+    -1px -1px 0 #ffffff,
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff;
+}
+
+/* Optional: keep the hero link from getting an underline */
+.intro-link {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Optional: center the CTA button nicely under the hero text */
+.intro-cta {
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media(min-width:768px) {
+    header .intro-text {
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+    /* ... rest of the media query ... */
+}
+
+
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
