@@ -3,19 +3,90 @@ url: "https://msufgso.org"       # Use your actual domain (no trailing slash)
 baseurl: ""                      # Leave blank if the site lives at the root of the domain
 
 # Site metadata
-title: "MSU FGSO"               # A meaningful title for your site
-email: "contact@msufgso.org"    # Contact email (optional)
+title: "MSU FGSO"                # A meaningful title for your site
+#email: "msufgso@msu.edu"        # Shared contact email (optional)
 description: "Michigan State University Forestry Graduate Student Organization"  # SEO/summary
 
-# (Optional) Organization / Team info — update or remove as needed
+# Officers & representatives (update names, pics, and links as needed)
 people:
   - name: "Parker Hopkins"
     pic: 1
     position: President
     social:
-      - title: website
+      - title: globe          # font-awesome icon: fa-globe
         url: "https://mtntheman.com"
+      # - title: envelope     # optional direct email icon
+      #   url: "mailto:phopkins@msu.edu"
 
+  - name: "TBD Secretary"
+    pic: 2
+    position: Secretary
+    social:
+      - title: envelope
+        url: "mailto:fgso-secretary@msu.edu"
+
+  - name: "TBD Communications / Outreach Manager"
+    pic: 3
+    position: Communications & Outreach Manager
+    social:
+      - title: envelope
+        url: "mailto:fgso-communications@msu.edu"
+
+  - name: "TBD Activities / Social Planning Chair"
+    pic: 4
+    position: Activities & Social Planning Chair
+    social:
+      - title: envelope
+        url: "mailto:fgso-activities@msu.edu"
+
+  - name: "TBD Treasurer & Fundraising Manager"
+    pic: 5
+    position: Treasurer & Fundraising Manager
+    social:
+      - title: envelope
+        url: "mailto:fgso-treasurer@msu.edu"
+
+  - name: "TBD COGS Representative"
+    pic: 6
+    position: COGS Representative
+    social:
+      - title: envelope
+        url: "mailto:fgso-cogs@msu.edu"
+
+  - name: "TBD Graduate Student Committee Representative"
+    pic: 7
+    position: Graduate Student Committee Representative
+    social:
+      - title: envelope
+        url: "mailto:fgso-gsc@msu.edu"
+
+  - name: "TBD Graduate Symposium Chair"
+    pic: 8
+    position: Graduate Symposium Chair
+    social:
+      - title: envelope
+        url: "mailto:fgso-symposium@msu.edu"
+
+  - name: "TBD Sustainability Council Representative"
+    pic: 9
+    position: Sustainability Council Representative
+    social:
+      - title: envelope
+        url: "mailto:fgso-sustainability@msu.edu"
+
+  # - name: "TBD DEI Committee Representative"
+  #   pic: 10
+  #   position: DEI Committee Representative
+  #   social:
+  #     - title: envelope
+  #       url: "mailto:fgso-dei@msu.edu"
+
+  # - name: "TBD DEI Committee Co-Representative"
+  #   pic: 11
+  #   position: DEI Committee Co-Representative
+  #   social:
+  #     - title: envelope
+  #       url: "mailto:fgso-dei@msu.edu"
 
 # # Social links (footer / header) — update URLs to your org’s social media
 # social:
@@ -29,3 +100,4 @@ people:
 # Build settings
 markdown: kramdown
 permalink: pretty               # optional — defines how URLs of pages/posts are formatted
+
