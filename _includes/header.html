@@ -1,5 +1,4 @@
 <!-- Navigation -->
-<!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -10,7 +9,9 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand page-scroll" href="#page-top">
+
+      <!-- Brand: ALWAYS go to homepage root -->
+      <a class="navbar-brand" href="{{ '/' | relative_url }}">
         {{ site.title | default: "MSU Forestry Graduate Student Organization" }}
       </a>
     </div>
@@ -19,7 +20,7 @@
     <div class="collapse navbar-collapse" id="fgso-navbar">
       <ul class="nav navbar-nav navbar-right">
         <li class="hidden">
-          <a href="#page-top"></a>
+          <a href="{{ '/' | relative_url }}"></a>
         </li>
         <li>
           <a class="page-scroll" href="{{ '/#about' | relative_url }}">About</a>
@@ -28,13 +29,13 @@
           <a class="page-scroll" href="{{ '/#events' | relative_url }}">Events</a>
         </li>
         <li>
-          <a class="page-scroll" href="{{ '/symposium2026/' | relative_url }}">>Graduate Research Symposium</a>
+          <a href="{{ '/symposium2026/' | relative_url }}">Graduate Research Symposium</a>
         </li>
         <li>
           <a class="page-scroll" href="{{ '/#team' | relative_url }}">Officers</a>
         </li>
         <li>
-          <a class="page-scroll" href="#contact">Get Involved</a>
+          <a class="page-scroll" href="{{ '/#contact' | relative_url }}">Get Involved</a>
         </li>
       </ul>
     </div>
@@ -43,23 +44,23 @@
   <!-- /.container -->
 </nav>
 
-<!-- Header -->
+<!-- Header (homepage hero) -->
 <header id="page-top">
   <div class="container">
-    <div class="intro-text">
-      <div class="intro-lead-in">
-        Michigan State University Forestry Graduate Student Organization
+    <a href="{{ '/' | relative_url }}" class="intro-link">
+      <div class="intro-text">
+        <div class="intro-lead-in hero-outline">
+          Michigan State University Forestry Graduate Student Organization
+        </div>
+        <div class="intro-heading hero-outline">
+          Community, Scholarship, and Service in Forestry
+        </div>
       </div>
-      <div class="intro-heading">
-        Community, Scholarship, and Service in Forestry
-      </div>
-      <a href="#about" class="page-scroll btn btn-xl">Learn More</a>
+    </a>
+    <div class="intro-cta">
+      <a href="{{ '/#about' | relative_url }}" class="page-scroll btn btn-xl">Learn More</a>
     </div>
   </div>
 </header>
-<!--
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
- -->
+
 
