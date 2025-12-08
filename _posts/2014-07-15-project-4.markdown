@@ -1,15 +1,18 @@
 ---
-title: Treehouse
-subtitle: Website Design
+title: FGSO Coffee Hours
+subtitle: Informal check-ins and conversation
 layout: default
 modal-id: 4
-date: 2014-07-15
-img: treehouse.png
-thumbnail: treehouse-thumbnail.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
-
+date: 2025-09-20
+event_date: Twice monthly · Midday on campus
+img: coffee-hours.png
+thumbnail: coffee-hours-thumb.png
+alt: Coffee cups on a table
+category: Events
+tags: [event, social, peer-support]
+description: >
+  Drop-in coffee hours where students can ask questions, share updates, and talk
+  through research and department life in a low-pressure setting. Often co-hosted
+  with officers and committee representatives to make it easy to raise ideas and concerns.
 ---
+

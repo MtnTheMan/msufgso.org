@@ -1,15 +1,18 @@
 ---
-title: Round Icons
-subtitle: Graphic Design
+title: 11th Annual Graduate Research Symposium
+subtitle: Forests as a Solution
 layout: default
 modal-id: 6
-date: 2014-07-15
-img: roundicons.png
-thumbnail: roundicons-thumbnail.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
-
+date: 2025-12-01         # publish date for the post (not the event date)
+event_date: February 5, 2026 · All day
+img: symposium-2026.png
+thumbnail: symposium-2026-thumb.png
+alt: MSU Forestry Graduate Research Symposium
+category: Events
+tags: [event, symposium, research]
+description: >
+  A one-day, student-led forum showcasing graduate research in forestry and allied fields.
+  Hosted in East Lansing with a statewide virtual option, the symposium highlights Forests
+  as a Solution through talks, lightning sessions, and a practice–policy dialogue.
 ---
+

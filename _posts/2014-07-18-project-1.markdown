@@ -1,15 +1,19 @@
 ---
-title: Dreams
-subtitle: Website Design
+title: Partner Events with COGS & Campus Partners
+subtitle: Joint programming with MSU-wide graduate organizations
 layout: default
 modal-id: 1
-date: 2014-07-18
-img: dreams.png
-thumbnail: dreams-thumbnail.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
-
+date: 2025-10-10
+event_date: Throughout the year
+img: partner-events.png
+thumbnail: partner-events-thumb.png
+alt: Collaborative event with multiple graduate organizations
+category: Events
+tags: [event, partnership, cogs]
+description: >
+  FGSO collaborates with the Council of Graduate Students (COGS), CANR units, and other
+  RSOs to offer workshops, panels, and social events that connect Forestry grads to the
+  broader MSU graduate community. Topics range from professional development and funding
+  opportunities to interdisciplinary networking events.
 ---
+

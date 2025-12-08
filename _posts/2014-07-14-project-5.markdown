@@ -1,15 +1,18 @@
 ---
-title: Startup Framework
-subtitle: Website Design
+title: Grad Student Happy Hour
+subtitle: Monthly social for MSU Forestry grads
 layout: default
 modal-id: 5
-date: 2014-07-14
-img: startup-framework.png
-thumbnail: startup-framework-thumbnail.png
-alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
-
+date: 2025-09-15
+event_date: First Thursday of each month · 5–7 PM
+img: happy-hour.png
+thumbnail: happy-hour-thumb.png
+alt: Forestry grad students at a social event
+category: Events
+tags: [event, social, community]
+description: >
+  A relaxed, off-campus gathering where Forestry graduate students can connect,
+  debrief, and build community across labs and cohorts. Locations vary by month
+  and are announced via email and the FGSO calendar.
 ---
+
