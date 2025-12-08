@@ -1,37 +1,49 @@
-<!-- Team Section -->
-    <section id="team" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-            </div>
-            <div class="row">
-                {% for member in site.people %}
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
-                        <h4>{{ member.name }}</h4>
-                        <p class="text-muted">{{ member.position }}</p>
-                        <ul class="list-inline social-buttons">
-                            {% for network in member.social %}
-                            <li>
-                                <a href="{{ network.url }}">
-                                    <i class="fa fa-{{ network.title }}"></i>
-                                </a>
-                            </li>
-                            {% endfor %}
+<!-- Officers & Representatives Section -->
+<section id="team" class="bg-light-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Officers &amp; Representatives</h2>
+        <h3 class="section-subheading text-muted">
+          Student leaders who help coordinate meetings, events, and communication for the Forestry Graduate Student Organization.
+        </h3>
+      </div>
+    </div>
 
-                        </ul>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div>
+    <div class="row">
+      {% for member in site.people %}
+      <div class="col-sm-4">
+        <div class="team-member">
+          <img src="img/team/{{ member.pic }}.jpg"
+               class="img-responsive img-circle"
+               alt="{{ member.name }}">
+          <h4>{{ member.name }}</h4>
+          <p class="text-muted">{{ member.position }}</p>
+          {% if member.social %}
+          <ul class="list-inline social-buttons">
+            {% for network in member.social %}
+            <li>
+              <a href="{{ network.url }}">
+                <i class="fa fa-{{ network.title }}"></i>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
         </div>
-    </section>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 text-center">
+        <p class="large text-muted">
+          FGSO is a horizontally structured, student-led organization. Officers coordinate logistics,
+          represent graduate student perspectives in departmental and university spaces, and help
+          sustain a welcoming community where all Forestry graduate students can participate and
+          be heard.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
