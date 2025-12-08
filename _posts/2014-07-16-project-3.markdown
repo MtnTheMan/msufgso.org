@@ -5,8 +5,8 @@ layout: default
 modal-id: 3
 date: 2025-09-25
 event_date: Weekly · Scheduled blocks during the semester
-img: writing-club.png
-thumbnail: writing-club-thumb.png
+img: writing-club.jpg
+thumbnail: writing-club.jpg
 alt: Students writing with laptops and notebooks
 category: Events
 tags: [event, writing, professional-development]
