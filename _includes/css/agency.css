@@ -273,6 +273,19 @@ header .intro-text .intro-heading {
   text-align: center;
 }
 
+/* White outline for the navbar brand text */
+.navbar-default .navbar-brand.hero-outline-brand {
+  /* keep whatever color the theme gives it */
+  -webkit-text-stroke: 0.5px #ffffff;
+  text-stroke: 0.5px #ffffff; /* harmless where unsupported */
+
+  text-shadow:
+    -1px -1px 0 #ffffff,
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff;
+}
+
 @media(min-width:768px) {
     header .intro-text {
         padding-top: 300px;
