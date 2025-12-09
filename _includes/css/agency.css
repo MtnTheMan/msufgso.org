@@ -883,6 +883,25 @@ img::-moz-selection {
     background: 0 0;
 }
 
+/* Intro text: force white, no underline on hover */
+header .intro-text .intro-lead-in,
+header .intro-text .intro-heading {
+    color: #fff;
+}
+
+/* If any intro text is wrapped in a link, keep it white and un-underlined */
+header .intro-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .intro-text a:hover,
+header .intro-text a:focus,
+header .intro-text a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
