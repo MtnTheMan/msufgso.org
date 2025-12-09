@@ -906,15 +906,18 @@ body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
 
-body#symposium-page header {
-    background-image: none;
-    padding: 0;
-}
-
+/* Symposium page: remove the big hero intro block */
 body#symposium-page header .intro-text {
-    padding-top: 70px;  /* enough space so content doesn’t hide behind the nav */
+    padding-top: 80px;    /* smaller top padding so content starts higher */
     padding-bottom: 0;
 }
+
+body#symposium-page header .intro-lead-in,
+body#symposium-page header .intro-heading,
+body#symposium-page header .btn-xl {
+    display: none;
+}
+
 
 
 
