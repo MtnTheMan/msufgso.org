@@ -918,6 +918,10 @@ body#symposium-page header .btn-xl {
     display: none;
 }
 
+/* Prevent content from hiding behind the fixed navbar on the symposium page */
+body#symposium-page {
+    padding-top: 80px;  /* tweak this value to match your navbar height */
+}
 
 
 
