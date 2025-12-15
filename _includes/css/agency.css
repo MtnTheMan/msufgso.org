@@ -178,6 +178,16 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
     color: #{{ site.data.template.color.primary }};
+    text-decoration: none;
+
+    /* subtle white outline */
+    -webkit-text-stroke: 0.5px #ffffff;
+    text-stroke: 0.5px #ffffff; /* safe no-op where unsupported */
+    text-shadow:
+        -1px -1px 0 #ffffff,
+         1px -1px 0 #ffffff,
+        -1px  1px 0 #ffffff,
+         1px  1px 0 #ffffff;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -233,6 +243,17 @@ fieldset[disabled] .btn-xl.active {
     color: #fff;
     background-color: #{{ site.data.template.color.secondary }};
 }
+
+
+
+@media(min-width:768px) {
+    header .intro-text {
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+    /* ... rest of the media query ... */
+}
+
 
 @media(min-width:768px) {
     .navbar-default {
@@ -862,6 +883,45 @@ img::-moz-selection {
     background: 0 0;
 }
 
+/* Intro text: force white, no underline on hover */
+header .intro-text .intro-lead-in,
+header .intro-text .intro-heading {
+    color: #fff;
+}
+
+/* If any intro text is wrapped in a link, keep it white and un-underlined */
+header .intro-text a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .intro-text a:hover,
+header .intro-text a:focus,
+header .intro-text a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+
+/* Symposium page: remove the big hero intro block */
+body#symposium-page header .intro-text {
+    padding-top: 80px;    /* smaller top padding so content starts higher */
+    padding-bottom: 0;
+}
+
+body#symposium-page header .intro-lead-in,
+body#symposium-page header .intro-heading,
+body#symposium-page header .btn-xl {
+    display: none;
+}
+
+/* Prevent content from hiding behind the fixed navbar on the symposium page */
+body#symposium-page {
+    padding-top: 80px;  /* tweak this value to match your navbar height */
+}
+
+
+

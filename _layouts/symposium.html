@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body id="symposium-page">
+
+    {%- comment -%}
+    Reuse the same header/nav so the site feels consistent.
+    If you later want a different hero just for this page,
+    you can make a separate include (e.g. header_symposium.html).
+    {%- endcomment -%}
+    {% include nav_only.html %}
+
+    {{ content }}
+
+    {% include footer.html %}
+    {% include js.html %}
+  </body>
+</html>
