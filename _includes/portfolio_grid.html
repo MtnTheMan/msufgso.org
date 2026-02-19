@@ -1,4 +1,4 @@
-<!-- Events Section -->
+<!-- Events + Games Section -->
 <section id="portfolio" class="bg-light-gray">
   <div class="container">
     <div class="row">
@@ -11,9 +11,6 @@
     </div>
 
     <div class="row">
-      {%- comment -%}
-      Option 1: show only posts tagged as events
-      {%- endcomment -%}
       {% assign events = site.posts | where_exp: "post", "post.tags contains 'event'" %}
 
       {% for post in events %}
@@ -41,6 +38,50 @@
           </div>
         </div>
       {% endfor %}
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12 text-center" style="margin-top: 35px;">
+        <h2 class="section-heading">Games</h2>
+        <h3 class="section-subheading text-muted">
+          Auto-generated from HTML files inside the <code>games/</code> folder.
+        </h3>
+      </div>
+    </div>
+
+    {% assign html_files = site.static_files | where_exp: "file", "file.extname == '.html'" | sort: 'name' %}
+    {% assign game_count = 0 %}
+
+    <div class="row">
+      {% for game in html_files %}
+        {% assign normalized_path = game.path | downcase %}
+        {% if normalized_path contains '/games/' %}
+          {% assign game_count = game_count | plus: 1 %}
+          {% assign game_title = game.basename | replace: '-', ' ' | replace: '_', ' ' | strip %}
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a href="{{ game.path | relative_url }}" class="portfolio-link" target="_blank" rel="noopener">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-gamepad fa-3x"></i>
+                </div>
+              </div>
+              <img src="{{ '/img/portfolio/roundicons-thumbnail.png' | relative_url }}" class="img-responsive img-centered" alt="{{ game_title }}">
+            </a>
+            <div class="portfolio-caption">
+              <h4>{{ game_title }}</h4>
+              <p class="text-muted">
+                <a href="{{ game.path | relative_url }}" target="_blank" rel="noopener">Open game</a>
+              </p>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+
+      {% if game_count == 0 %}
+        <div class="col-lg-12 text-center">
+          <p class="text-muted">No game HTML files were found in <code>games/</code> yet.</p>
+        </div>
+      {% endif %}
     </div>
   </div>
 </section>
