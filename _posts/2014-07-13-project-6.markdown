@@ -5,8 +5,8 @@ layout: default
 modal-id: 6
 date: 2025-12-01         # publish date for the post (not the event date)
 event_date: February 5, 2026 · All day
-img: /img/about/1.jpg
-thumbnail: /img/about/1.jpg
+img: /img/Campus%20photos/IMG_8849.JPG
+thumbnail: /img/Campus%20photos/IMG_8849.JPG
 alt: MSU Forestry Graduate Research Symposium
 category: Events
 tags: [event, symposium, research]
@@ -15,4 +15,3 @@ description: >
   Hosted in East Lansing with a statewide virtual option, the symposium highlights Forests
   as a Solution through talks, lightning sessions, and a practice–policy dialogue.
 ---
-
