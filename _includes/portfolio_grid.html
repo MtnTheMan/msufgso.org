@@ -12,9 +12,11 @@
 
     <div class="row">
       {%- comment -%}
-      Option 1: show only posts tagged as events
+      Show all published posts unless they are explicitly hidden.
+      This keeps entries visible even when contributors upload HTML
+      posts without the expected event/game tags.
       {%- endcomment -%}
-      {% assign events = site.posts | where_exp: "post", "post.tags contains 'event'" %}
+      {% assign events = site.posts | where_exp: "post", "post.hidden != true" %}
 
       {% for post in events %}
         {% assign thumb_src = post.thumbnail %}
