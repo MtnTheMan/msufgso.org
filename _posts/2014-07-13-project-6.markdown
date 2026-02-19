@@ -5,8 +5,8 @@ layout: default
 modal-id: 6
 date: 2025-12-01         # publish date for the post (not the event date)
 event_date: February 5, 2026 · All day
-img: symposium-2026.png
-thumbnail: symposium-2026-thumb.png
+img: /img/about/1.jpg
+thumbnail: /img/about/1.jpg
 alt: MSU Forestry Graduate Research Symposium
 category: Events
 tags: [event, symposium, research]

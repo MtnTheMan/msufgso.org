@@ -5,8 +5,8 @@ layout: default
 modal-id: 5
 date: 2025-09-15
 event_date: First Thursday of each month · 5–7 PM
-img: happy-hour.png
-thumbnail: happy-hour-thumb.png
+img: /img/about/2.jpg
+thumbnail: /img/about/2.jpg
 alt: Forestry grad students at a social event
 category: Events
 tags: [event, social, community]
