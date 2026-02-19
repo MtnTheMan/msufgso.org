@@ -5,8 +5,8 @@ layout: default
 modal-id: 4
 date: 2025-09-20
 event_date: Twice monthly · Midday on campus
-img: /img/about/3.jpg
-thumbnail: /img/about/3.jpg
+img: /img/Campus%20photos/IMG_5754.JPG
+thumbnail: /img/Campus%20photos/IMG_5754.JPG
 alt: Coffee cups on a table
 category: Events
 tags: [event, social, peer-support]

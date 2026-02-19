@@ -5,8 +5,8 @@ layout: default
 modal-id: 5
 date: 2025-09-15
 event_date: First Thursday of each month · 5–7 PM
-img: /img/about/2.jpg
-thumbnail: /img/about/2.jpg
+img: /img/Campus%20photos/IMG_6178.JPG
+thumbnail: /img/Campus%20photos/IMG_6178.JPG
 alt: Forestry grad students at a social event
 category: Events
 tags: [event, social, community]
@@ -15,4 +15,3 @@ description: >
   debrief, and build community across labs and cohorts. Locations vary by month
   and are announced via email and the FGSO calendar.
 ---
-

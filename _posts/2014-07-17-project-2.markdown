@@ -5,8 +5,8 @@ layout: default
 modal-id: 2
 date: 2025-10-01
 event_date: Selected weekends · Fall and spring
-img: /img/about/4.jpg
-thumbnail: /img/about/4.jpg
+img: /img/Campus%20photos/IMG_8738.JPG
+thumbnail: /img/Campus%20photos/IMG_8738.JPG
 alt: Graduate students hiking in a local park
 category: Events
 tags: [event, outdoor, community]

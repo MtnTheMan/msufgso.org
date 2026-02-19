@@ -5,8 +5,8 @@ layout: default
 modal-id: 1
 date: 2025-10-10
 event_date: Throughout the year
-img: /img/header-bg.jpg
-thumbnail: /img/header-bg.jpg
+img: /img/Campus%20photos/IMG_8709.JPG
+thumbnail: /img/Campus%20photos/IMG_8709.JPG
 alt: Collaborative event with multiple graduate organizations
 category: Events
 tags: [event, partnership, cogs]
