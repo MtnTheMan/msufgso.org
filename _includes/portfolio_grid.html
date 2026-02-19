@@ -17,6 +17,10 @@
       {% assign events = site.posts | where_exp: "post", "post.tags contains 'event'" %}
 
       {% for post in events %}
+        {% assign thumb_src = post.thumbnail %}
+        {% unless thumb_src contains '/' %}
+          {% assign thumb_src = 'img/portfolio/' | append: post.thumbnail %}
+        {% endunless %}
         <div class="col-md-4 col-sm-6 portfolio-item">
           <a href="#portfolioModal{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
             <div class="portfolio-hover">
@@ -24,7 +28,7 @@
                 <i class="fa fa-plus fa-3x"></i>
               </div>
             </div>
-            <img src="img/portfolio/{{ post.thumbnail }}" class="img-responsive img-centered" alt="{{ post.alt | default: post.title }}">
+            <img src="{{ thumb_src }}" class="img-responsive img-centered" alt="{{ post.alt | default: post.title }}">
           </a>
           <div class="portfolio-caption">
             <h4>{{ post.title }}</h4>
@@ -40,4 +44,3 @@
     </div>
   </div>
 </section>
-
